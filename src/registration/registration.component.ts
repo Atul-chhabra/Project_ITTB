@@ -29,7 +29,7 @@ export class RegistrationComponent implements OnInit {
         JSON.stringify(obj),
         {
           headers: {
-            'Ocp-Apim-Subscription-Key': 'ff5cb4f77263439ca10b06d564852164',
+            'Ocp-Apim-Subscription-Key': '',
           },
         }
       )

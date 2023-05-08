@@ -1,0 +1,57 @@
+form {
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  color: white;
+  width: 90%;
+  border-radius: 40px 5px;
+  box-shadow: 2px 1px 8px 2px rgb(255 255 255);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ff6d00;
+  border-radius: 5px 2px;
+  font-size: 10px;
+  padding: 5px;
+}
+input[type="submit"] {
+  background-color: #ff6d00;
+  border-radius: 19px;
+  font-size: 12px;
+  padding: 10px 10px;
+  border: 1px solid #0093d8;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  width: 100%;
+  text-align: center;
+}
+input[type="submit"]:hover {
+  background-color: transparent;
+}
+
+select {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ff6d00;
+  border-radius: 5px 2px;
+  color: #6d6e6e;
+}
+option {
+  padding: 12px 20px;
+  background-color: #f1f1f1;
+}
+select:focus {
+  outline: none;
+  box-shadow: 0 0 10px 1px #2c3e50;
+  background-color: white;
+}

@@ -30,36 +30,31 @@ export class PageBannerComponent implements OnInit {
 
   achievements = [
     {
-      imgUrl:
-        'https://raw.githubusercontent.com/Atul-chhabra/angular-9gxojg/main/src/asset/image/experts.png',
+      imgUrl: '/assets/image/experts.png',
       alt: 'user',
       title: 'Trainer Profiles',
       desc: 'Industry Experts',
     },
     {
-      imgUrl:
-        'https://raw.githubusercontent.com/Atul-chhabra/angular-9gxojg/main/src/asset/image/trained.png',
+      imgUrl: '/assets/image/trained.png',
       alt: 'trainer',
       title: 'Trained Students',
       desc: '1000+',
     },
     {
-      imgUrl:
-        'https://raw.githubusercontent.com/Atul-chhabra/angular-9gxojg/main/src/asset/image/success.png',
+      imgUrl: '/assets/image/success.png',
       alt: 'industry',
       title: 'Success Ratio',
       desc: '100%',
     },
     {
-      imgUrl:
-        'https://raw.githubusercontent.com/Atul-chhabra/angular-9gxojg/main/src/asset/image/corporate.png',
+      imgUrl: '/assets/image/corporate.png',
       alt: 'Corporate Training',
       title: 'Corporate Training',
       desc: 'For India & Abroad',
     },
     {
-      imgUrl:
-        'https://raw.githubusercontent.com/Atul-chhabra/angular-9gxojg/main/src/asset/image/job.png',
+      imgUrl: '/assets/image/job.png',
       alt: 'abroad',
       title: 'Job Assistance',
       desc: '100%',
@@ -68,32 +63,27 @@ export class PageBannerComponent implements OnInit {
 
   curriculum = [
     {
-      imgUrl:
-        'https://raw.githubusercontent.com/Atul-chhabra/angular-9gxojg/main/src/asset/image/experts.png',
+      imgUrl: '/assets/image/experts.png',
       alt: 'Placement',
       title: 'Placement Trainings',
     },
     {
-      imgUrl:
-        'https://raw.githubusercontent.com/Atul-chhabra/angular-9gxojg/main/src/asset/image/trained.png',
+      imgUrl: '/assets/image/trained.png',
       alt: 'Interview',
       title: 'Interview Q & A',
     },
     {
-      imgUrl:
-        'https://raw.githubusercontent.com/Atul-chhabra/angular-9gxojg/main/src/asset/image/success.png',
+      imgUrl: '/assets/image/success.png',
       alt: 'Resume',
       title: 'Resume Preparation',
     },
     {
-      imgUrl:
-        'https://raw.githubusercontent.com/Atul-chhabra/angular-9gxojg/main/src/asset/image/corporate.png',
+      imgUrl: '/assets/image/corporate.png',
       alt: 'Mock Interviews',
       title: 'Mock Interviews',
     },
     {
-      imgUrl:
-        'https://raw.githubusercontent.com/Atul-chhabra/angular-9gxojg/main/src/asset/image/job.png',
+      imgUrl: '/assets/image/job.png',
       alt: 'abroad',
       title: 'Job Assistance',
       desc: '100%',

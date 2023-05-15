@@ -7,16 +7,13 @@ form {
   border-radius: 40px 5px;
   box-shadow: 2px 1px 8px 2px rgb(255 255 255);
 }
-label {
-  display: block;
-  margin-bottom: 10px;
-}
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 select {
   width: 100%;
-  margin-bottom: 10px;
+
   border: 1px solid #ff6d00;
   border-radius: 5px 2px;
   font-size: 10px;
@@ -38,10 +35,16 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: transparent;
 }
-
+.invalid-feedback {
+  color: #ff6d00 !important;
+  font-size: 10px;
+}
+.form-group {
+  margin-bottom: 7px;
+}
 select {
   width: 100%;
-  margin-bottom: 10px;
+
   border: 1px solid #ff6d00;
   border-radius: 5px 2px;
   color: #6d6e6e;

@@ -1,38 +1,62 @@
-<form action="#" method="post">
-  <input
-    type="text"
-    id="name"
-    name="name"
-    placeholder=" Full Name"
-    required
-    [(ngModel)]="fullName"
-  />
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <input
+      type="text"
+      formControlName="fullname"
+      placeholder="Full Name"
+      class="form-control"
+      [ngClass]="{ 'is-invalid': submitted && f['fullname'].errors }"
+    />
+    <div *ngIf="submitted && f['fullname'].errors" class="invalid-feedback">
+      <div>Fullname is required</div>
+    </div>
+  </div>
 
-  <input
-    type="email"
-    id="email"
-    name="email"
-    placeholder=" Email address"
-    required
-    [(ngModel)]="email"
-  />
+  <div class="form-group">
+    <input
+      type="text"
+      formControlName="email"
+      placeholder="Email address"
+      class="form-control"
+      [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+    />
+    <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+      <div>Email is required</div>
+    </div>
+  </div>
 
-  <input
-    type="tel"
-    id="phone"
-    name="phone"
-    placeholder="Phone number"
-    required
-    [(ngModel)]="phone"
-  />
+  <div class="form-group">
+    <input
+      type="text"
+      formControlName="phone"
+      placeholder="Phone number"
+      class="form-control"
+      [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+    />
+    <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+      <div>Phone is required</div>
+    </div>
+  </div>
 
-  <select [(ngModel)]="course" name="course">
-    <option value="">--Choose Course--</option>
-    <option value="SAP SD">SAP SD</option>
-    <option value="SAP MM">SAP MM</option>
-    <option value="SAP FI">SAP FI</option>
-    <option value="SAP ABAP">SAP ABAP</option>
-    <option value="SAP HANA">SAP HANA</option>
-  </select>
-  <input type="submit" value="Register" (click)="onSubmit()" />
+  <div class="form-group">
+    <select
+      formControlName="course"
+      placeholder="Choose course"
+      class="form-control"
+      name="course"
+      [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+    >
+      <option value="">--Choose Course--</option>
+      <option value="SAP SD">SAP SD</option>
+      <option value="SAP MM">SAP MM</option>
+      <option value="SAP FI">SAP FI</option>
+      <option value="SAP ABAP">SAP ABAP</option>
+      <option value="SAP HANA">SAP HANA</option>
+    </select>
+
+    <div *ngIf="submitted && f['course'].errors" class="invalid-feedback">
+      <div>Choose atleast one course</div>
+    </div>
+  </div>
+  <input type="submit" value="Register " (click)="onSubmit()" />
 </form>

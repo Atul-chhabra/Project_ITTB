@@ -1,0 +1,22 @@
+.body {
+
+    background: url(https://raw.githubusercontent.com/Atul-chhabra/angular-9gxojg/main/src/asset/image/banner-image.jpg);
+    background-size: contain;
+    height: 400px;
+  
+}
+@media (max-width:980px) {
+    .body {
+        height: 450px;
+    }
+}
+@media (max-width:540px) {
+    .body {
+        height: 350px;
+    }
+}
+
+
+
+
+

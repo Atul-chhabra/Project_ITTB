@@ -19,14 +19,6 @@ export class RegistrationComponent implements OnInit {
   ngOnInit(): void {
     this.form = this.fb.group({
       fullname: ['', Validators.required],
-      username: [
-        '',
-        [
-          Validators.required,
-          Validators.minLength(6),
-          Validators.maxLength(20),
-        ],
-      ],
       email: ['', [Validators.required, Validators.email]],
       phone: ['', [Validators.required]],
       course: ['', [Validators.required]],
@@ -37,18 +29,19 @@ export class RegistrationComponent implements OnInit {
     return this.form.controls;
   }
   constructor(private fb: FormBuilder, private http: HttpClient) {}
+  
   onSubmit() {
     this.submitted = true;
+
     if (this.form.valid) {
       // handle form submission
-
       this.http
         .post(
-          'https://iitbapim.azure-api.net/manual/paths/invoke',
-          JSON.stringify(this.form.value, null, 2),
+          'https://ittb50.azure-api.net/manual/paths/invoke',
+          JSON.stringify(this.form.value),
           {
             headers: {
-              'Ocp-Apim-Subscription-Key': '',
+              'Ocp-Apim-Subscription-Key': '0827d894355640daac4fa40d2ea1cedd',
             },
           }
         )

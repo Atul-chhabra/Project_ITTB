@@ -1,8 +1,8 @@
 .body {
 
-    background: url(https://raw.githubusercontent.com/Atul-chhabra/angular-9gxojg/main/src/asset/image/banner-image.jpg);
+    background: url('../assets/image/banner-image.jpg');
     background-size: contain;
-    height: 400px;
+    height: 480px;
   
 }
 @media (max-width:980px) {
@@ -12,7 +12,7 @@
 }
 @media (max-width:540px) {
     .body {
-        height: 350px;
+        height: 480px;
     }
 }
 

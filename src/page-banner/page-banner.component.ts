@@ -1,10 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { RegistrationModalComponent } from '../registration-modal/registration-modal.component';
 @Component({
   selector: 'app-page-banner',
   templateUrl: './page-banner.component.html',
   styleUrls: ['./page-banner.component.css', '../css/main.css'],
 })
 export class PageBannerComponent implements OnInit {
+
+
+  // openModal() {
+  //   this.modalService.open(RegistrationModalComponent);
+  // }
+  showForm=false;
   courses: any = [
     {
       title: 'SAP SD',
@@ -92,6 +99,13 @@ export class PageBannerComponent implements OnInit {
 
   onEnroll() {
     console.log('Clicked');
+  }
+
+  showRegistration() {
+    console.log("clicked");
+    
+    this.showForm=true;
+
   }
 
   ngOnInit() {}
